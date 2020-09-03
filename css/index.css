@@ -1,4 +1,11 @@
 
+/*
+This CSS resource incorporates links to font software which is the 
+valuable copyrighted property of Monotype and/or its suppliers. You 
+may not attempt to copy, install, redistribute, convert, modify or reverse 
+engineer this font software. Please contact Monotype with any questions 
+regarding Web Fonts: http://www.fonts.com
+*/
 @font-face{
     font-family:"Uni Sans W01 Bold";
     src:url("../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"),url("../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
@@ -6,20 +13,11 @@
 body{
     background-color:#E7F1F2;
     font-family:"Uni Sans W01 Bold";
-
+    padding-inline: 75px;
 
 }
 
 nav {
-    display: inline-block;
-}
-
-p {
-    font-family:"Uni Sans W01 Bold";
-
-}
-
-.navbar{
     background-color: #212121;
     font-size: 36px;
     padding-bottom: 10px;
@@ -27,14 +25,11 @@ p {
     display:flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    flex-direction: rowS;
-    padding:.5rem 1rem
 }
+
 .logo {
-    display: inline-block;
+
     vertical-align: top;
-    margin-left: 140px;
-    margin-top: 75px;
 }
 
 .mainNav{
@@ -46,8 +41,6 @@ list-style-type: none;
     list-style: none;
     display:inline-block;
 
-
-
 }
   
 .mainNav li a {
@@ -57,6 +50,8 @@ list-style-type: none;
 
   
 }
+
+
 
 .preloader {
     position: fixed;
