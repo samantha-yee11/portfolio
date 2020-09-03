@@ -13,9 +13,7 @@ regarding Web Fonts: http://www.fonts.com
 body{
     background-color: #212121;
     font-family:"Uni Sans W01 Bold";
-
 }
-
 
 
 nav {
@@ -26,30 +24,23 @@ nav {
     padding-right: 75px;
     padding-left: 75px;
     padding-top: 100px;
-
 }
 .logo {
     padding-top: 10px;
 }
-
 .mainNav{
 list-style-type: none;
 float: right;
-
-
 }
-
 .mainNav li {
     list-style: none;
     display:inline-block;
 
 
 }
-
 #resume{
     padding-right: 0px;
 }
-  
 .mainNav li a {
     color: #E7F1F2;
   text-decoration: none;
@@ -60,7 +51,19 @@ float: right;
   
 }
 
+.landingHero {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 10px;
 
+}
+.upperImgAbout {
+
+}
+.lowerImgAbout {
+
+}
 
 .preloader {
     position: fixed;
@@ -72,14 +75,12 @@ float: right;
     display: flex;
     align-items: center;
   }
-
   .preloader #cd {
     animation: spin 3s ease;
     transition: all;
     width: 150px;
     margin: 0 auto;
   }
-
   @keyframes spin {
     0% {
       transform: rotate(0deg);
