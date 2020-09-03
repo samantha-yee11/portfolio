@@ -1,0 +1,68 @@
+body{
+    background-color: #212121;
+}
+
+nav {
+    display: inline-block;
+}
+#logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 140px;
+    margin-top: 75px;
+}
+
+.navMenu{
+list-style-type: none;
+padding: 0px;
+  margin: 0px;
+  display:inline-block; 
+  font-size: 36px;
+}
+
+.navMenu li {
+    list-style: none;
+    display:inline-block;
+    margin-top: 75px;
+
+}
+  
+.navMenu li a {
+    color: #E7F1F2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 36px;
+  padding-right: 130px;
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .preloader #cd {
+    animation: spin 3s ease;
+    transition: all;
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+      opacity: 0;
+    }
+  }
+  
