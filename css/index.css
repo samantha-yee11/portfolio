@@ -1,40 +1,60 @@
+
+@font-face{
+    font-family:"Uni Sans W01 Bold";
+    src:url("../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"),url("../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
+}
 body{
-    background-color: #212121;
+    background-color:#E7F1F2;
+    font-family:"Uni Sans W01 Bold";
+
+
 }
 
 nav {
     display: inline-block;
 }
-#logo {
+
+p {
+    font-family:"Uni Sans W01 Bold";
+
+}
+
+.navbar{
+    background-color: #212121;
+    font-size: 36px;
+    padding-bottom: 10px;
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    flex-direction: rowS;
+    padding:.5rem 1rem
+}
+.logo {
     display: inline-block;
     vertical-align: top;
     margin-left: 140px;
     margin-top: 75px;
 }
 
-.navMenu{
+.mainNav{
 list-style-type: none;
-padding: 0px;
-  margin: 0px;
-  display:inline-block; 
-  font-size: 36px;
+
 }
 
-.navMenu li {
+.mainNav li {
     list-style: none;
     display:inline-block;
-    margin-top: 75px;
 
 
 
 }
   
-.navMenu li a {
+.mainNav li a {
     color: #E7F1F2;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 36px;
-  padding-block: 306px;
+
   
 }
 
@@ -43,7 +63,7 @@ padding: 0px;
     width: 100%;
     height: 100vh;
     z-index: 100000;
-
+    background-color: #212121;
     top: 0;
     display: flex;
     align-items: center;
@@ -59,9 +79,11 @@ padding: 0px;
   @keyframes spin {
     0% {
       transform: rotate(0deg);
+
     }
     50% {
       transform: rotate(360deg);
+
     }
     100% {
       transform: rotate(720deg);
