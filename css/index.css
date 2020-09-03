@@ -25,6 +25,8 @@ padding: 0px;
     display:inline-block;
     margin-top: 75px;
 
+
+
 }
   
 .navMenu li a {
@@ -32,7 +34,8 @@ padding: 0px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 36px;
-  padding-right: 130px;
+  padding-block: 306px;
+  
 }
 
 .preloader {
