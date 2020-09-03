@@ -11,29 +11,31 @@ regarding Web Fonts: http://www.fonts.com
     src:url("../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"),url("../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
 }
 body{
-    background-color:#E7F1F2;
+    background-color: #212121;
     font-family:"Uni Sans W01 Bold";
-    padding-inline: 75px;
 
 }
+
+
 
 nav {
-    background-color: #212121;
-    font-size: 36px;
     padding-bottom: 10px;
-    position:relative;
     display:flex;
-    flex-wrap:wrap;
+    flex-direction: row;
     justify-content:space-between;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-top: 100px;
+
 }
-
 .logo {
-
-    vertical-align: top;
+    padding-top: 10px;
 }
 
 .mainNav{
 list-style-type: none;
+float: right;
+
 
 }
 
@@ -41,12 +43,19 @@ list-style-type: none;
     list-style: none;
     display:inline-block;
 
+
+}
+
+#resume{
+    padding-right: 0px;
 }
   
 .mainNav li a {
     color: #E7F1F2;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 36px;
+  padding-right: 30px;
 
   
 }
