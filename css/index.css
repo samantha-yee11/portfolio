@@ -60,6 +60,7 @@ float: right;
     float: left;
     padding-left: 14vh;
     position: fixed;
+    height: 68%;
 }
 .aboutMeImages{
     display: flex;

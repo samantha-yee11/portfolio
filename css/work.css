@@ -1,0 +1,11 @@
+.projectsSideText{
+    float: left;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    height: min-content;
+}
+
+.navBar{
+    float;
+}
