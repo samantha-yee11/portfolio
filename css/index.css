@@ -17,13 +17,13 @@ body{
 
 
 nav {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     display:flex;
     flex-direction: row;
     justify-content:space-between;
-    padding-right: 75px;
-    padding-left: 75px;
-    padding-top: 100px;
+    padding-right: 14vh;
+    padding-left: 14vh;
+    padding-top: 75px;
 }
 .logo {
     padding-top: 10px;
@@ -35,8 +35,6 @@ float: right;
 .mainNav li {
     list-style: none;
     display:inline-block;
-
-
 }
 #resume{
     padding-right: 0px;
@@ -58,11 +56,18 @@ float: right;
     padding-top: 10px;
 
 }
-.upperImgAbout {
-
+.sideText{
+    float: left;
+    padding-left: 14vh;
+    position: fixed;
 }
-.lowerImgAbout {
-
+.aboutMeImages{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-left: 33%;
+    padding-top: 10px;
+    width: 70%;
 }
 
 .preloader {
