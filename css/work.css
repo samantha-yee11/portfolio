@@ -31,16 +31,16 @@ input[type=radio] {
 
 .container {
     font-family: 'Open Sans', sans-serif;
-    position: absolute;
+    position: relative;
+    padding-bottom: 15%;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 75px;
+
+    transform: translate(-50%);
   width: 100%;
   max-width: 800px;
   max-height: 600px;
   height: 100%;
-  z-index: 50;
+
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
