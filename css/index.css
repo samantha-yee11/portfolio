@@ -24,6 +24,7 @@ nav {
     padding-right: 14vh;
     padding-left: 14vh;
     padding-top: 75px;
+    z-index: 100;
 }
 .logo {
     padding-top: 1px;
@@ -48,14 +49,39 @@ float: right;
 
   
 }
+.landingHeroSpace {
+  display: flex;
+  position: relative;
+  align-items: center; 
+  justify-content: center;
+  padding-top: 10px;
 
+}
 .landingHero {
     display: flex;
     align-items: center; 
     justify-content: center;
     padding-top: 10px;
+    z-index: 1;
 
 }
+#viewWork {
+  z-index: 50;
+  position: absolute;
+  top: 45px;
+  right: 50%;
+  margin-right: -300px;
+  width: 300px;
+}
+
+#viewWork img:hover{
+  -webkit-filter: drop-shadow(15px 15px 15px #EF311D);
+  filter: drop-shadow(15px 15px 15px rgba(239,49,29,0.8));
+ 
+}
+  /*box-shadow: 15px 15px 30px 1px rgba(239,49,29,0.8);*/
+
+
 .sideText{
     float: left;
     padding-left: 14vh;
