@@ -66,17 +66,18 @@ float: right;
     display: flex;
     align-items: center; 
     justify-content: center;
-    padding-top: 10px;
-    z-index: 1;
+    padding-top: 20px;
+    z-index: 5;
+    width: 50vh;
+
 
 }
 #viewWork {
   z-index: 50;
   position: absolute;
-  top: 45px;
-  right: 50%;
-  margin-right: -300px;
-  width: 300px;
+  top: 95px;
+  
+left: 75%;
 }
 
 #viewWork img:hover{
@@ -84,7 +85,20 @@ float: right;
   filter: drop-shadow(15px 15px 15px rgba(239,49,29,0.8));
  
 }
-  /*box-shadow: 15px 15px 30px 1px rgba(239,49,29,0.8);*/
+
+.window {
+  z-index: 1;
+}
+.workGrid{
+  z-index: 5;
+  color: #E7F1F2;
+  top:10;
+  left: 20px;
+  display:flex;
+  align-items: center;
+  flex-flow: column;
+}
+
 
 
 .sideText{
@@ -101,6 +115,12 @@ float: right;
     margin-left: 33%;
     padding-top: 10px;
     width: 70%;
+}
+
+@media only screen and (max-width:1300px) {
+  body {
+    margin : 14 vh;
+  }
 }
 
 .preloader {
