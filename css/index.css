@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /*
 This CSS resource incorporates links to font software which is the 
@@ -6,178 +7,206 @@ may not attempt to copy, install, redistribute, convert, modify or reverse
 engineer this font software. Please contact Monotype with any questions 
 regarding Web Fonts: http://www.fonts.com
 */
-@font-face{
-    font-family:"Uni Sans W01 Bold";
-    src:url("../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"),url("../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
-}
-body{
-    background-color: #212121;
-    font-family:"Uni Sans W01 Bold";
+@font-face {
+  font-family: "Uni Sans W01 Bold";
+  src: url("../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"), url("../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
 }
 
+body {
+  background-color: #212121;
+  font-family: "Uni Sans W01 Bold";
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
 nav {
-    padding-bottom: 30px;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    padding-right: 14vh;
-    padding-left: 14vh;
-    padding-top: 75px;
-    z-index: 1000;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 14vh;
+  padding-left: 14vh;
+  padding-top: 75px;
+  z-index: 1000;
 }
+
 .logo {
-    padding-top: 1px;
-    z-index: 500;
+  padding-top: 1px;
+  z-index: 500;
 }
-.mainNav{
-list-style-type: none;
-float: right;
+
+.mainNav {
+  list-style-type: none;
+  float: right;
 }
+
 .mainNav li {
-    list-style: none;
-    display:inline-block;
+  list-style: none;
+  display: inline-block;
 }
-#resume{
-    padding-right: 0px;
+
+#resume {
+  padding-right: 0px;
 }
+
 .mainNav li a {
-    color: #E7F1F2;
+  color: #E7F1F2;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 36px;
   padding-right: 30px;
 }
-.mainNav li a:hover{
+
+.mainNav li a:hover {
   text-shadow: 1px 1px #F1E439, 2px 2px #EF311D,
-   -1px -1px #5DEDFD, -2px -2px #003DE5;
+    -1px -1px #5DEDFD, -2px -2px #003DE5;
   text-shadow;
 
 }
+
 .landingHeroSpace {
   display: flex;
   position: relative;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   padding-top: 10px;
 
 }
+
 .landingHero {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    padding-top: 20px;
-    z-index: 5;
-    width: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 5;
+  width: 50vh;
 
 
 }
+
 #viewWork {
   z-index: 50;
   position: absolute;
   top: 95px;
-  
-left: 75%;
+
+  left: 75%;
 }
 
-#viewWork img:hover{
+#viewWork img:hover {
   -webkit-filter: drop-shadow(15px 15px 15px #EF311D);
-  filter: drop-shadow(15px 15px 15px rgba(239,49,29,0.8));
- 
+  filter: drop-shadow(15px 15px 15px rgba(239, 49, 29, 0.8));
+
 }
 
 .window {
   z-index: 1;
 }
-.workGrid{
+
+.workGrid {
   z-index: 5;
   color: #E7F1F2;
-  top:10;
-  left: 20px;
-  display:flex;
+  display: flex;
   align-items: left;
-  margin-left: 20px;
+  margin-left: 40px;
   justify-content: left;
   flex-flow: row;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.workGrid img:hover{
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+.workGrid img:hover {
+  animation: wiggle 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  }
-
-
-.sideText{
-    float: left;
-    padding-left: 14vh;
-    position: fixed;
-    height: 68%;
-    z-index: 200;
 }
-.aboutMeImages{
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    margin-left: 33%;
-    padding-top: 10px;
-    width: 70%;
+
+
+.sideText {
+  float: left;
+  padding-left: 14vh;
+  position: fixed;
+  height: 68%;
+  z-index: 200;
+}
+
+.aboutMeImages {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin-left: 33%;
+  padding-top: 10px;
+  width: 70%;
+  color: #E7F1F2;
+  font-size: 24px;
 }
 
 @media only screen and (max-width:1300px) {
   body {
-    margin : 14 vh;
+    margin: 14 vh;
   }
 }
 
 .preloader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 100000;
-    background-color: #212121;
-    top: 0;
-    display: flex;
-    align-items: center;
-  }
-  .preloader #cd {
-    animation: spin 3s ease;
-    transition: all;
-    width: 150px;
-    margin: 0 auto;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #212121;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
 
-    }
-    50% {
-      transform: rotate(360deg);
+.preloader #cd {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
 
-    }
-    100% {
-      transform: rotate(720deg);
-      opacity: 0;
-    }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+
   }
 
-    @keyframes wiggle {
-      10%, 90% {
-        transform: translate3d(-1px, 0, 0);
-      }
-    
-      20%, 80% {
-        transform: translate3d(2px, 0, 0);
-      }
-    
-      30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
-      }
-    
-      40%, 60% {
-        transform: translate3d(4px, 0, 0);
-      }
+  50% {
+    transform: rotate(360deg);
+
   }
-  
-  
+
+  100% {
+    transform: rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

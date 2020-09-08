@@ -1,5 +1,4 @@
 function fade() {
     $('.preloader').fadeOut("slow");
-    }
-    setTimeout(fade, 1500);
-    
+}
+setTimeout(fade, 1500);
