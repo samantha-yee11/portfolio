@@ -129,7 +129,6 @@ nav {
 }
 
 .workGrid h1{
-
   font-size: 16px;
   letter-spacing: 1px;
   grid-column: span 3;
@@ -137,9 +136,8 @@ nav {
   margin: 0;
   padding-bottom: 100px;
   font-weight: 300;
-
-
 }
+
 .workGrid h4{
   margin: 0;
   font-size: 14px;
