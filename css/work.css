@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
 
 
 input[type=radio] {
@@ -90,12 +83,42 @@ input[type=radio] {
 }
 
 .player {
-    background-color: #E7F1F2;
-    border-radius: 8px;
     width: 320px;
-    padding: 16px 10px;
+    
     z-index: 5;
+    background-color: #CBCCCD;
+    border-top: 2px solid #E7F1F2;
+    border-left: 2px solid #E7F1F2;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 5px;
 }
+
+.player-header {
+    height: 25px;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    padding: .25em .75em;
+    line-height: 1.4;
+    width: calc(100% + 30px);
+    right: 15px;
+    bottom: 5px;
+    border-top: 1px solid #CBCCCD;
+    border-left: 1px solid #CBCCCD;
+    border-right: 2px solid #CBCCCD;
+    border-bottom: 1px solid #CBCCCD;
+    background: #18445A;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 .upper-part {
     position: relative;
@@ -107,7 +130,18 @@ input[type=radio] {
 }
 
 .play-icon {
-    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    
+    border-left: 20px solid #18445A;
+}
+
+.windows-button {
+    border:none;
+    background:none;
+    margin-top: 3px;
 }
 
 .song-info {
@@ -141,7 +175,7 @@ input[type=radio] {
 .progress-bar {
     height: 3px;
     width: 100%;
-    background-color: #D1D1D1;
+    background-color: #E7F1F2;
     border-radius: 2px;
     overflow: hidden;
 }
@@ -151,7 +185,7 @@ input[type=radio] {
     position: relative;
     width: 60%;
     height: 100%;
-    background-color: #ABD2F3;
+    background-color: #18445A;
     border-radius: 6px;
 }
 
