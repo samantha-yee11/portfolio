@@ -86,16 +86,22 @@ nav {
   padding-top: 20px;
   z-index: 5;
   width: 50vh;
+  position: relative;
 
 
+}
+
+.CDCover {
+  position: relative;
 }
 
 #viewWork {
   z-index: 50;
   position: absolute;
-  top: 95px;
+  top: 75px;
+  left:60%;
 
-  left: 75%;
+
 }
 
 #viewWork img:hover {
@@ -111,12 +117,41 @@ nav {
 .workGrid {
   z-index: 5;
   color: #E7F1F2;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: left;
   margin-left: 40px;
-  justify-content: left;
   flex-flow: row;
   font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 15px;
+
+}
+
+.workGrid h1{
+
+  font-size: 16px;
+  letter-spacing: 1px;
+  grid-column: span 3;
+  align-content: flex-start;
+  margin: 0;
+  padding-bottom: 100px;
+  font-weight: 300;
+
+
+}
+.workGrid h4{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 .workGrid img:hover {
@@ -193,19 +228,15 @@ nav {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
+  
+  40%,
+  60%  {
+    transform: translate3d(-2px, 0, 0);
   }
 
   30%,
   50%,
   70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
+    transform: translate3d(2px, 0, 0);
   }
 }
