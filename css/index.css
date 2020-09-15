@@ -20,6 +20,7 @@ body {
 html,
 body {
   margin: 0;
+
   padding: 0;
   width: 100%;
   height: 100%;
@@ -34,6 +35,10 @@ nav {
   padding-left: 14vh;
   padding-top: 75px;
   z-index: 1000;
+}
+
+.footer {
+  height: 200px;
 }
 
 .logo {
@@ -72,34 +77,54 @@ nav {
 
 .landingHeroSpace {
   display: flex;
-  position: relative;
+  margin: 0 200px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 10px;
 
 }
-
 .landingHero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   padding-top: 20px;
-  z-index: 5;
-  width: 50vh;
   position: relative;
 
 
+}
+
+.landingWords {
+  background-color: #E7F1F2;
+  box-shadow: 15px 15px 10px black;
+  height: 200px;
+  width:150px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  z-index: 10;
+  transform: rotate(5deg);
+  text-align: center;
+  color: #212121;
+}
+.landingWords p {
+  border: 5px;
+  border: yellow;
+}
+
+.disc {
+  z-index: 3;
+  right:270px;
+  opacity: .5;
 }
 
 .CDCover {
   position: relative;
+  z-index: 5;
 }
 
 #viewWork {
   z-index: 50;
   position: absolute;
-  top: 75px;
-  left:60%;
+  top: 100px;
+  right: 40px;
+
 
 
 }
@@ -114,8 +139,31 @@ nav {
   z-index: 1;
 }
 
+.skillsBorder {
+  border-left: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+    border-right: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    height: 85%;
+    padding: 10px;
+    margin: 0;
+    z-index: inherit;
+}
+.skillsContent {
+  z-index: inherit;
+  border-left: 2px solid #404040;
+  border-top: 2px solid #404040;
+  border-right: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+  background: #ABD2F3;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
 .workGrid {
-  z-index: 5;
+  z-index: 7;
   color: #E7F1F2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -125,34 +173,89 @@ nav {
   font-family: 'Open Sans', sans-serif;
   position: absolute;
   top: 15px;
+  letter-spacing: .025em
 
 }
 
-.workGrid h1{
-  font-size: 16px;
-  letter-spacing: 1px;
-  grid-column: span 3;
-  align-content: flex-start;
-  margin: 0;
-  padding-bottom: 100px;
-  font-weight: 300;
+.workGridBottom {
+  z-index: 7;
+  color: #E7F1F2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: left;
+  margin-left: 40px;
+  flex-flow: row;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 80px;
+  letter-spacing: .025em
+
 }
 
-.workGrid h4{
+.windowContainer {
+  width: 720px;
+  height: 360px;
+
+  position: relative;
+  top: 100px;
+  z-index: 5;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #CBCCCD;
+  border-top: 2px solid #E7F1F2;
+  border-left: 2px solid #E7F1F2;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right:15px;
+  padding-top: 5px;
+}
+
+.windowHeader {
+  z-index: 6;
+  height: 25px;
+  position: relative;
+  text-align: left;
+  color: #E7F1F2;
+  padding: .25em .75em;
+  line-height: 1.4;
+  width: calc(100% + 15px);
+  right: 15px;
+  bottom: 5px;
+  border-top: 1px solid #CBCCCD;
+  border-left: 1px solid #CBCCCD;
+  border-right: 2px solid #CBCCCD;
+  border-bottom: 1px solid #CBCCCD;
+  background: #18445A;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  color: #E7F1F2;
+
+
+}
+
+
+
+.workGridBottom h4{
   margin: 0;
   font-size: 14px;
   font-weight: 300;
+  color: #000;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
-.workGrid img:hover {
+.workGridBottom img:hover {
   animation: wiggle 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
