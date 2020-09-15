@@ -64,8 +64,8 @@ nav {
 }
 
 .mainNav li a:hover {
-  text-shadow: 1px 1px #F1E439, 2px 2px #EF311D,
-    -1px -1px #5DEDFD, -2px -2px #003DE5;
+  text-shadow: 1px 1px #F1E439, 3px 2px #EF311D,
+    -1px -1px #5DEDFD, -3px -2px #003DE5;
   text-shadow;
 
 }
