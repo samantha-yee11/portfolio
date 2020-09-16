@@ -69,8 +69,8 @@ nav {
 }
 
 .mainNav li a:hover {
-  text-shadow: 1px 1px #F1E439, 3px 2px #EF311D,
-    -1px -1px #5DEDFD, -3px -2px #003DE5;
+  text-shadow: 1px 1px #F1E439, 2px 2px #EF311D,
+    -1px -1px #5DEDFD, -2px -2px #003DE5;
   text-shadow;
 
 }
@@ -159,28 +159,14 @@ nav {
   overflow-y: scroll;
 }
 
-.workGrid {
-  z-index: 7;
-  color: #E7F1F2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: left;
-  margin-left: 40px;
-  flex-flow: row;
-  font-family: 'Open Sans', sans-serif;
-  position: absolute;
-  top: 15px;
-  letter-spacing: .025em
-
-}
 
 .workGridBottom {
   z-index: 7;
   color: #E7F1F2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: left;
-  margin-left: 40px;
+  justify-content: center;
+  margin-left: 30px;
   flex-flow: row;
   font-family: 'Open Sans', sans-serif;
   position: absolute;
@@ -190,7 +176,7 @@ nav {
 }
 
 .windowContainer {
-  width: 720px;
+  width: 800px;
   height: 360px;
 
   position: relative;
