@@ -40,6 +40,7 @@
       <input type="radio" name="slider" id="item-2">
       <input type="radio" name="slider" id="item-3">
       <input type="radio" name="slider" id="item-4">
+      <input type="radio" name="slider" id="item-5">
     <div class="cards">
       <label class="card" for="item-1" id="song-1">
         <img src="projects/tumbnailTEST.png" alt="KidsTeam">      </label>
@@ -50,13 +51,15 @@
         <img src="projects/tumbnailTEST.png" alt="USDA">      </label>
         <label class="card" for="item-4" id="song-4">
           <img src="projects/tumbnailTEST.png" alt="The Thrift Collective">      </label>
+          <label class="card" for="item-5" id="song-5">
+            <img src="projects/tumbnailTEST.png" alt="NAVI">      </label>
     </div>
     <div class="player">
       <header class="player-header" style="padding-right:3px;">
         <span>Project Player</span>
         <div class="buttons">
-				<button class="windows-button" style="padding:0; height:16px;width:16px;position:relative;"><img src="projects/LeftArrow.png" style="position:absolute;left:1px;top:0px;"></button>
-				<button class="windows-button" style="padding:0; height:16px;width:16px;position:relative;margin-right:3px;"><img src="projects/RightArrow.png" style="position:absolute;left:1px;top:0px;"></button>
+				<button id="prev" style="padding:0; height:16px;width:16px;position:relative;"><img src="projects/LeftArrow.png" style="position:absolute;left:1px;top:0px;"></button>
+				<button id="next" style="padding:0; height:16px;width:16px;position:relative;margin-right:3px;"><img src="projects/RightArrow.png" style="position:absolute;left:1px;top:0px;"></button>
         </div>
       
       </header>
@@ -64,33 +67,40 @@
       <div class="upper-part">
         <div class="play-icon">
         </div>
-        <div class="info-area" id="test">
+        <div class="info-area" id="start">
           <label class="song-info" id="song-info-1">
             <div class="title">KidsTeam</div>
             <div class="sub-line">
               <div class="subtitle">UX Research at University of WA</div>
-              <div class="time">4.05</div>
+              <div class="time">1.2020</div>
             </div>
           </label>
           <label class="song-info" id="song-info-2">
             <div class="title">Save The Whales</div>
             <div class="sub-line">
               <div class="subtitle">Nonprofit Redesign</div>
-              <div class="time">4.05</div>
+              <div class="time">8.2020</div>
             </div>
           </label>
           <label class="song-info" id="song-info-3">
             <div class="title">USDA</div>
             <div class="sub-line">
               <div class="subtitle">Government Redesign</div>
-              <div class="time">4.05</div>
+              <div class="time">7.2020</div>
             </div>
           </label>
           <label class="song-info" id="song-info-4">
             <div class="title">Thrift Collective</div>
             <div class="sub-line">
               <div class="subtitle">UX Designer</div>
-              <div class="time">4.05</div>
+              <div class="time">9.2020</div>
+            </div>
+          </label>
+          <label class="song-info" id="song-info-5">
+            <div class="title">NAVI</div>
+            <div class="sub-line">
+              <div class="subtitle">Mobile Travel App</div>
+              <div class="time">5.2020</div>
             </div>
           </label>
         </div>
@@ -101,3 +111,8 @@
 
     </div>
   </div>
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </body>
+  </html>
