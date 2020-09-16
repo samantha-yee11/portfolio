@@ -71,7 +71,6 @@ nav {
 .mainNav li a:hover {
   text-shadow: 1px 1px #F1E439, 2px 2px #EF311D,
     -1px -1px #5DEDFD, -2px -2px #003DE5;
-  text-shadow;
 
 }
 
@@ -175,9 +174,51 @@ nav {
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-y: scroll;
+
 }
 
+.outside {
+  overflow-y: scroll;
+  overflow-x:hidden;
+  z-index: inherit;
+  border-left: 2px solid #404040;
+  border-top: 2px solid #404040;
+  border-right: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+  background: #ABD2F3;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.outsideOfWork  {
+  color: #212121;
+  margin: 0px 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+
+}
+
+.aboutMeImages blockquote {
+  font-family: "Uni Sans W01 Bold";
+  word-spacing: 3px;
+  line-height: 35px;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #E7F1F2;
+
+}
+
+.aboutMeImages p {
+  font-family: 'Open Sans', sans-serif;
+  width: 600px;
+  margin-left: 10px;
+  font-size: 20px;
+  color: #E7F1F2;
+}
 
 .workGridBottom {
   z-index: 7;
@@ -195,14 +236,14 @@ nav {
 }
 
 .windowContainer {
-  width: 800px;
+  width: 600px;
   height: 360px;
 
   position: relative;
-  top: 100px;
-  z-index: 5;
+  top: 50px;
+  left:10px;
   box-sizing: border-box;
-  margin: 0 auto;
+
   background-color: #CBCCCD;
   border-top: 2px solid #E7F1F2;
   border-left: 2px solid #E7F1F2;
@@ -212,6 +253,7 @@ nav {
   padding-left: 15px;
   padding-right:15px;
   padding-top: 5px;
+  margin-bottom: 100px;
 }
 
 .windowHeader {
@@ -244,7 +286,7 @@ nav {
 
 .workGridBottom h4{
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: #000;
 }
@@ -277,6 +319,7 @@ nav {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  overflow-y: hidden;
   margin-left: 33%;
   padding-top: 10px;
   color: #E7F1F2;
