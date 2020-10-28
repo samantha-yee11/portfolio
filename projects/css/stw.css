@@ -8,7 +8,7 @@ regarding Web Fonts: http://www.fonts.com
 */
 @font-face {
   font-family: "Uni Sans W01 Bold";
-  src: url("../../../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"), url("../../../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
+  src: url("../../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"), url("../../../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
 }
 
 .w-layout-grid {
@@ -372,14 +372,7 @@ img {
 }
 
 @media screen and (max-width: 991px) {
-  .grid {
-    margin-left: 5%;
-    -ms-grid-columns: 200px 450px;
-    grid-template-columns: 200px 450px;
-  }
 }
-
-
 
 #w-node-597a79786dcc-0718ba1b {
   -ms-grid-row-align: start;
