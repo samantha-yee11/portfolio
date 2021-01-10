@@ -69,9 +69,23 @@ nav {
 }
 
 .mainNav li a:hover {
-  text-shadow: 1px 1px #F1E439, 2px 2px #EF311D,
-    -1px -1px #5DEDFD, -2px -2px #003DE5;
+  animation: glitchNav .5s linear infinite;
+}
 
+@keyframes glitchNav {
+  0%, 100% {
+    text-shadow: 1px 1px #F1E439, 2.5px 2.5px #EF311D,
+    -1px -1px #5DEDFD, -2.5px -2.5px #003DE5;
+  } 25% {
+    text-shadow: -1px -1px #F1E439, -2.5px -2.5px #EF311D,
+    1px 1px #5DEDFD, 2.5px 2.5px #003DE5;
+  } 50% {
+    text-shadow: -1px 1px #F1E439, -2.5px 2.5px #EF311D,
+    1px -1px #5DEDFD, 2.5px -2.5px #003DE5;
+  } 75% {
+    text-shadow: 1px -1px #F1E439, 2.5px -2.5px #EF311D,
+    -1px 1px #5DEDFD, -2.5px 2.5px #003DE5;
+  }
 }
 
 .landingHeroSpace {
@@ -123,10 +137,39 @@ nav {
 
 .socialLinks img:hover {
   -webkit-filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D)
-  drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-  filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
-  drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+    filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
 }
+
+  @keyframes glitch {
+    0%, 100% {
+    -webkit-filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D)
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+    filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+
+    } 25% {
+    -webkit-filter: drop-shadow(-1px -1px 0px #F1E439) drop-shadow(-2px -2px 0px #EF311D)
+    drop-shadow(1px 1px 0px #5DEDFD) drop-shadow( 2px 2px 0px #003DE5);
+    filter: drop-shadow(-1px -1px 0px #F1E439) drop-shadow(-2px -2px 0px #EF311D) 
+    drop-shadow(1px 1px 0px #5DEDFD) drop-shadow( 2px 2px 0px #003DE5);
+
+    } 50% {
+    -webkit-filter: drop-shadow(-1px 1px 0px #F1E439) drop-shadow(-2px 2px 0px #EF311D)
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+    filter: drop-shadow(1px -1px 0px #F1E439) drop-shadow(2px -2px 0px #EF311D) 
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+
+    } 75% {
+    -webkit-filter: drop-shadow(1px -1px 0px #F1E439) drop-shadow(2px -2px 0px #EF311D)
+    drop-shadow(-1px 1px 0px #5DEDFD) drop-shadow( -2px 2px 0px #003DE5);
+    filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
+    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+
+    }
+  }
+
 
 .CDCover {
   position: relative;
@@ -322,10 +365,13 @@ nav {
 
 .sideText {
   float: left;
-  padding-left: 14vh;
   position: fixed;
-  height: 68%;
+  top: 200px;
   z-index: 200;
+  max-height: 68%;
+  overflow-x: hidden;
+  width: auto;
+  padding-left: 14vh;
 }
 
 .aboutMeImages {
@@ -333,10 +379,24 @@ nav {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: hidden;
+  max-width: 100%;
   margin-left: 33%;
   padding-top: 10px;
   color: #E7F1F2;
   font-size: 24px;
+}
+
+@media screen and(orientation: portrait) {
+  .sideText {
+    left: 20vw;
+    overflow-x: hidden;
+
+  }
+}
+@media screen and(max-width: 800px) {
+  .sideText {
+    padding-left: 14vh;
+  }
 }
 
 @media only screen and (max-width:1300px) {
