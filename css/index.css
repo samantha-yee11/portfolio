@@ -142,34 +142,6 @@ nav {
     drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
 }
 
-  @keyframes glitch {
-    0%, 100% {
-    -webkit-filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D)
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-    filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-
-    } 25% {
-    -webkit-filter: drop-shadow(-1px -1px 0px #F1E439) drop-shadow(-2px -2px 0px #EF311D)
-    drop-shadow(1px 1px 0px #5DEDFD) drop-shadow( 2px 2px 0px #003DE5);
-    filter: drop-shadow(-1px -1px 0px #F1E439) drop-shadow(-2px -2px 0px #EF311D) 
-    drop-shadow(1px 1px 0px #5DEDFD) drop-shadow( 2px 2px 0px #003DE5);
-
-    } 50% {
-    -webkit-filter: drop-shadow(-1px 1px 0px #F1E439) drop-shadow(-2px 2px 0px #EF311D)
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-    filter: drop-shadow(1px -1px 0px #F1E439) drop-shadow(2px -2px 0px #EF311D) 
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-
-    } 75% {
-    -webkit-filter: drop-shadow(1px -1px 0px #F1E439) drop-shadow(2px -2px 0px #EF311D)
-    drop-shadow(-1px 1px 0px #5DEDFD) drop-shadow( -2px 2px 0px #003DE5);
-    filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-
-    }
-  }
-
 
 .CDCover {
   position: relative;
