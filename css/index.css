@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 /*
 This CSS resource incorporates links to font software which is the 
 valuable copyrighted property of Monotype and/or its suppliers. You 
@@ -7,6 +6,7 @@ may not attempt to copy, install, redistribute, convert, modify or reverse
 engineer this font software. Please contact Monotype with any questions 
 regarding Web Fonts: http://www.fonts.com
 */
+
 @font-face {
   font-family: "Uni Sans W01 Bold";
   src: url("../Fonts/6013393/b46d9a47-ee5b-4506-ba43-d11b2bf73052.woff2") format("woff2"), url("../Fonts/6013393/399c962b-42ca-413d-87b1-2e369a590e1b.woff") format("woff");
@@ -17,10 +17,8 @@ body {
   font-family: "Uni Sans W01 Bold";
 }
 
-html,
-body {
+html, body {
   margin: 0;
-
   padding: 0;
   width: 100%;
   height: 100%;
@@ -56,6 +54,8 @@ nav {
   display: inline-block;
 }
 
+}
+
 #resume {
   padding-right: 0px;
 }
@@ -74,17 +74,16 @@ nav {
 
 @keyframes glitchNav {
   0%, 100% {
-    text-shadow: 1px 1px #F1E439, 2.5px 2.5px #EF311D,
-    -1px -1px #5DEDFD, -2.5px -2.5px #003DE5;
-  } 25% {
-    text-shadow: -1px -1px #F1E439, -2.5px -2.5px #EF311D,
-    1px 1px #5DEDFD, 2.5px 2.5px #003DE5;
-  } 50% {
-    text-shadow: -1px 1px #F1E439, -2.5px 2.5px #EF311D,
-    1px -1px #5DEDFD, 2.5px -2.5px #003DE5;
-  } 75% {
-    text-shadow: 1px -1px #F1E439, 2.5px -2.5px #EF311D,
-    -1px 1px #5DEDFD, -2.5px 2.5px #003DE5;
+    text-shadow: 1px 1px #F1E439, 2.5px 2.5px #EF311D, -1px -1px #5DEDFD, -2.5px -2.5px #003DE5;
+  }
+  25% {
+    text-shadow: -1px -1px #F1E439, -2.5px -2.5px #EF311D, 1px 1px #5DEDFD, 2.5px 2.5px #003DE5;
+  }
+  50% {
+    text-shadow: -1px 1px #F1E439, -2.5px 2.5px #EF311D, 1px -1px #5DEDFD, 2.5px -2.5px #003DE5;
+  }
+  75% {
+    text-shadow: 1px -1px #F1E439, 2.5px -2.5px #EF311D, -1px 1px #5DEDFD, -2.5px 2.5px #003DE5;
   }
 }
 
@@ -94,21 +93,18 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 10px;
-
 }
-.landingHero {
 
+.landingHero {
   padding-top: 20px;
   position: relative;
-
-
 }
 
 .landingWords {
   background-color: #E7F1F2;
   box-shadow: 15px 15px 10px black;
   height: 200px;
-  width:150px;
+  width: 150px;
   border-radius: 10px;
   padding: 5px 10px;
   z-index: 10;
@@ -116,7 +112,6 @@ nav {
   text-align: center;
   color: #212121;
 }
-
 
 .rightCol {
   display: flex;
@@ -128,7 +123,6 @@ nav {
 .socialLinks {
   display: inline;
   padding-top: 40px;
-
 }
 
 .socialLinks img {
@@ -136,12 +130,9 @@ nav {
 }
 
 .socialLinks img:hover {
-  -webkit-filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D)
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
-    filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) 
-    drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+  -webkit-filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
+  filter: drop-shadow(1px 1px 0px #F1E439) drop-shadow(2px 2px 0px #EF311D) drop-shadow(-1px -1px 0px #5DEDFD) drop-shadow( -2px -2px 0px #003DE5);
 }
-
 
 .CDCover {
   position: relative;
@@ -154,7 +145,7 @@ nav {
   top: 60px;
   right: 30px;
   -webkit-filter: drop-shadow( 2px 2px 6px black);
-  filter:drop-shadow(2px 2px 6px black);
+  filter: drop-shadow(2px 2px 6px black);
 }
 
 #viewBlog {
@@ -163,19 +154,17 @@ nav {
   bottom: 60px;
   left: 95px;
   -webkit-filter: drop-shadow( 2px 1px 1px black);
-  filter:drop-shadow(2px 1px 1px black);
+  filter: drop-shadow(2px 1px 1px black);
 }
 
 #viewWork img:hover {
   -webkit-filter: drop-shadow(15px 15px 15px #EF311D);
   filter: drop-shadow(15px 15px 15px rgba(239, 49, 29, 0.8));
-
 }
 
 #viewBlog img:hover {
   -webkit-filter: drop-shadow(15px 15px 15px #EF311D);
   filter: drop-shadow(15px 15px 15px rgba(239, 49, 29, 0.8));
-
 }
 
 .window {
@@ -184,14 +173,15 @@ nav {
 
 .skillsBorder {
   border-left: 1px solid #dfdfdf;
-    border-top: 1px solid #dfdfdf;
-    border-right: 1px solid #7f7f7f;
-    border-bottom: 1px solid #7f7f7f;
-    height: 85%;
-    padding: 10px;
-    margin: 0;
-    z-index: inherit;
+  border-top: 1px solid #dfdfdf;
+  border-right: 1px solid #7f7f7f;
+  border-bottom: 1px solid #7f7f7f;
+  height: 85%;
+  padding: 10px;
+  margin: 0;
+  z-index: inherit;
 }
+
 .skillsContent {
   z-index: inherit;
   border-left: 2px solid #404040;
@@ -202,12 +192,11 @@ nav {
   height: 100%;
   padding: 0;
   margin: 0;
-
 }
 
 .outside {
   overflow-y: scroll;
-  overflow-x:hidden;
+  overflow-x: hidden;
   z-index: inherit;
   border-left: 2px solid #404040;
   border-top: 2px solid #404040;
@@ -219,12 +208,11 @@ nav {
   margin: 0;
 }
 
-.outsideOfWork  {
+.outsideOfWork {
   color: #212121;
   margin: 0px 40px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-
 }
 
 .aboutMeImages blockquote {
@@ -233,11 +221,11 @@ nav {
   line-height: 35px;
   width: 400px;
   padding-top: 10px;
-  padding-bottom: 10px;;
+  padding-bottom: 10px;
+  ;
   text-transform: uppercase;
   font-size: 24px;
   color: #E7F1F2;
-
 }
 
 .aboutMeImages p {
@@ -260,18 +248,15 @@ nav {
   position: absolute;
   top: 80px;
   letter-spacing: .025em
-
 }
 
 .windowContainer {
   width: 600px;
   height: 360px;
-
   position: relative;
   top: 50px;
-  left:10px;
+  left: 10px;
   box-sizing: border-box;
-
   background-color: #CBCCCD;
   border-top: 2px solid #E7F1F2;
   border-left: 2px solid #E7F1F2;
@@ -279,7 +264,7 @@ nav {
   border-bottom: 2px solid #000;
   padding-bottom: 15px;
   padding-left: 15px;
-  padding-right:15px;
+  padding-right: 15px;
   padding-top: 5px;
   margin-bottom: 100px;
 }
@@ -306,13 +291,9 @@ nav {
   justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
   color: #E7F1F2;
-
-
 }
 
-
-
-.workGridBottom h4{
+.workGridBottom h4 {
   margin: 0;
   font-size: 16px;
   font-weight: 300;
@@ -333,7 +314,6 @@ nav {
   backface-visibility: hidden;
   perspective: 1000px;
 }
-
 
 .sideText {
   float: left;
@@ -358,25 +338,6 @@ nav {
   font-size: 24px;
 }
 
-@media screen and(orientation: portrait) {
-  .sideText {
-    left: 20vw;
-    overflow-x: hidden;
-
-  }
-}
-@media screen and(max-width: 800px) {
-  .sideText {
-    padding-left: 14vh;
-  }
-}
-
-@media only screen and (max-width:1300px) {
-  body {
-    margin: 14 vh;
-  }
-}
-
 .preloader {
   position: fixed;
   width: 100%;
@@ -398,14 +359,10 @@ nav {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-
   }
-
   50% {
     transform: rotate(360deg);
-
   }
-
   100% {
     transform: rotate(720deg);
     opacity: 0;
@@ -413,21 +370,115 @@ nav {
 }
 
 @keyframes wiggle {
-
-  10%,
-  90% {
+  10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-
-  
-  40%,
-  60%  {
+  40%, 60% {
     transform: translate3d(-2px, 0, 0);
   }
-
-  30%,
-  50%,
-  70% {
+  30%, 50%, 70% {
     transform: translate3d(2px, 0, 0);
+  }
+}
+
+@media (max-width: 1030px) {
+  .mainNav li a {
+    font-size: 24px;
+    padding-right: 15px;
+  }
+  nav {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+  .sideText {
+    padding-left: 5vh;
+    max-height: 50%;
+    z-index: 0;
+  }
+  .aboutMeImages {
+    z-index: 5;
+  }
+  .upperImgAbout {
+    z-index: 5;
+  }
+  .landingHeroSpace {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #viewWork {
+    left: 350px;
+  }
+  .CDCover {
+    left: 50px;
+  }
+}
+
+@media (max-width: 780px) {
+  .upperImgAbout {
+    width: 800px;
+  }
+
+  .lowerImgAbout {
+    width: 780px;
+  }
+
+  .CDCover {
+    left: 0px;
+  }
+ 
+
+  #viewWork {
+    left: 300px;
+  }
+
+  .aboutMeImages p {
+    font-size: 16px;
+    width: auto;
+    margin-right: 30px;
+  }
+  .aboutMeImages blockquote {
+    width: auto;
+
+  }
+
+  .windowContainer {
+    width: auto;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .sideText {
+    opacity: 25%;
+    padding-top: 50px;
+    padding-left: 2vh;
+  }
+  .mainNav li a {
+    font-size: 28px;
+  }
+  .CDCover {
+    left: 70px;
+  }
+  ul {
+    padding-inline-start: 150px;
+  }
+  .outsideOfWork {
+    font-size: 12px;
+  }
+  .aboutMeImages {
+    z-index: 5;
+    margin-left: 20%;
+  }
+  .skill h4 {
+    font-size: 12px;
+  }
+  .skill {
+    padding-bottom: 5px;
+  }
+
+  .workGridBottom {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
   }
 }
