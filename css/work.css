@@ -133,9 +133,9 @@ input[type=radio] {
     opacity: 1;
     z-index: 10;
 
-    img {
+    /*img {
         box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    }
+    }*/
 }
 
 .player {
@@ -193,10 +193,18 @@ input[type=radio] {
     border-left: 20px solid #18445A;
 }
 
+div.play-icon:hover {
+    filter: drop-shadow(2.5px 2.5px #98BAC8);
+
+}
+
 .buttons button {
     border:none;
     background:none;
     margin-top: 3px;
+}
+button:hover {
+    filter: drop-shadow(1.5px 1.5px #98BAC8);
 }
 
 .song-info {
